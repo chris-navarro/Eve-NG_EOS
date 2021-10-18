@@ -5,8 +5,8 @@
   gather_facts: yes
 
   vars_files:
-   - host_vars.yml
-   - hosts.yml
+   - host_vars
+   - hosts
 
   tasks:
   - name: Configure devuser login
