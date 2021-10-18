@@ -41,9 +41,9 @@ vEOS-siteC:
 
 Arista_vEOS:
   children:
-    vEOS-siteA
-    vEOS-siteB
-    vEOS-siteC
+    vEOS-siteA:
+    vEOS-siteB:
+    vEOS-siteC:
 
 
 
