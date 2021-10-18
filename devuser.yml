@@ -11,7 +11,7 @@
   - name: Configure devuser login
     eos_user:
       name: devuser
-      configured_password: "{{ admin }}"
+      configured_password: admin
       update_password: always
       state: present
     register: response
