@@ -16,4 +16,3 @@
       update_password: always
       state: present
     register: response
-  - debug: response 
