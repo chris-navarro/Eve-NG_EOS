@@ -1,0 +1,49 @@
+---
+##Ansible Hosts File for Home Lab
+vEOS-siteA:
+  hosts:
+    rsiteA-dcc01-vEOS:
+      ansible_host: 10.0.0.3
+    rsiteA-dcc02-vEOS:
+      ansible_host: 10.0.0.4
+  vars:
+    ansible_network_os: eos
+    ansible_become: yes
+    ansible_become_method: enable
+    ansible_user: cn02945
+    ansible_password: ebn10388**
+
+vEOS-siteB:
+  hosts:
+    rsiteB-dcc01-vEOS:
+      ansible_host: 10.0.2.3
+    rsiteB-dcc02-vEOS:
+      ansible_host: 10.0.2.4
+  vars:
+    ansible_network_os: eos
+    ansible_become: yes
+    ansible_become_method: enable
+    ansible_user: cn02945
+    ansible_password: ebn10388**
+
+    vEOS-siteC:
+  hosts:
+    rsiteC-dcc01-vEOS:
+      ansible_host: 10.0.1.3
+    rsiteC-dcc02-vEOS:
+      ansible_host: 10.0.1.4
+  vars:
+    ansible_network_os: eos
+    ansible_become: yes
+    ansible_become_method: enable
+    ansible_user: cn02945
+    ansible_password: ebn10388**
+
+Arista_vEOS:
+  children:
+    vEOS-siteA
+    vEOS-siteB
+    vEOS-siteC
+
+
+
