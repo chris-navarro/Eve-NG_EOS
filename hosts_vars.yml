@@ -26,7 +26,7 @@ vEOS-siteB:
     ansible_user: cn02945
     ansible_password: ebn10388**
 
-    vEOS-siteC:
+vEOS-siteC:
   hosts:
     rsiteC-dcc01-vEOS:
       ansible_host: 10.0.1.3
